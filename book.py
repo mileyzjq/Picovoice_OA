@@ -33,10 +33,10 @@ class LRUCache(collections.OrderedDict):
     
 
 # Your LRUCache object will be instantiated and called as such:
-obj = LRUCache(20)
+N = 3
+obj = LRUCache(3)
 obj.put("978-3-16-148410-0", Book("978-3-16-148410-0", "The Hitchhiker's Guide to the Galaxy", "Douglas Adams", "English"))
 obj.put("9971-5-0210-0", Book("9971-5-0210-0", "The Restaurant at the End of the Universe", "Tom Smith", "English"))
 obj.put("85-359-0277-5", Book("85-359-0277-5", "Life, the Universe and Everything", "Elio Gaspari", "English"))
-param_1 = obj.get("978-3-16-148410-0")
-print(param_1)
+print(obj.get("978-3-16-148410-0"))
 print(obj.get("9971-5-0210-0"))
